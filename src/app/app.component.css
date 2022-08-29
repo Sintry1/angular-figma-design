@@ -1,0 +1,13 @@
+.mainWindow{
+    background-color: '#E5E5E5';
+    display: flex;
+    max-width: 1440px;
+}
+.footer {
+    justify-content: 'bottom';
+}
+.header {
+    justify-content: 'top';
+    width: '100%';
+    height: 75px;
+}

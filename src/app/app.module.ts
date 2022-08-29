@@ -11,7 +11,6 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ImageComponent } from './components/image/image.component';
 import { TaskCardComponent } from './components/task-card/task-card.component';
-import { BodyComponent } from './components/body/body.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { BodyComponent } from './components/body/body.component';
     ButtonComponent,
     ImageComponent,
     TaskCardComponent,
-    BodyComponent
   ],
   imports: [
     BrowserModule,
