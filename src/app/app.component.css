@@ -1,13 +1,43 @@
-.mainWindow{
+mainWindow{
     background-color: '#E5E5E5';
-    display: flex;
+    display: flexbox;
     max-width: 1440px;
 }
-.footer {
-    justify-content: 'bottom';
-}
-.header {
+header {
     justify-content: 'top';
     width: '100%';
     height: 75px;
+}
+body {
+    display: inline-flex;
+    position: relative;
+}
+footer {
+    justify-content: 'bottom';
+}
+mat-card{
+    border: 2px solid black;
+    margin-top: 5px;
+    height: 350px;
+    width: 350px;
+    margin-left: 5px;
+}
+mat-card-locked{
+    height: 350px;
+    width: 350px;
+    background-color: '#3D4641';
+    border-radius: 6px;
+}
+mat-card-ask{
+   height: 350px; 
+   width: 350px;
+   background-color: '#E5E5E5';
+   border-radius: 6px;
+}
+
+mat-card-answered{
+    height: 350px;
+    width: 350px;
+    background-color: '#F6F6F3';
+    border-radius: 6px;
 }
