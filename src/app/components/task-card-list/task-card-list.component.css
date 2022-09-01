@@ -1,0 +1,36 @@
+.cards-container{
+    display: flex;
+    overflow-x: scroll;
+    height: calc(100vh - 222px);
+    width: 100vw;
+}
+.LOCKED{
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 74px;
+    height: 350px;
+    min-width: 350px;
+    background-color: #3D4641;
+    color: #F2EEE1;
+    border-radius: 6px;
+}
+.ASK, .ANSWER {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 74px;
+    height: 350px; 
+    min-width: 350px;
+    background-color: #E5E5E5;
+    color: #4A4A4A;
+    border-radius: 6px;
+}
+.ASKED, .ANSWERED {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 74px;
+    height: 350px;
+    min-width: 350px;
+    background-color: #F6F6F3;
+    color: #4A4A4A;
+    border-radius: 6px;
+}

@@ -1,0 +1,7 @@
+<section class="cards-container">  
+    <div *ngFor="let card of cardList">
+        <mat-card [ngClass]="card.isLocked ? 'LOCKED' : getClass(card.state)">
+            <mat-card-title>{{card.text}}</mat-card-title>
+        </mat-card>  
+    </div>
+</section>

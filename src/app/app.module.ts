@@ -11,7 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ImageComponent } from './components/image/image.component';
-import { TaskCardComponent } from './components/task-card/task-card.component';
+import { TaskCardListComponent } from './components/task-card-list/task-card-list.component';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { TaskCardComponent } from './components/task-card/task-card.component';
     AddTaskComponent,
     ButtonComponent,
     ImageComponent,
-    TaskCardComponent,
+    TaskCardListComponent,
   ],
   imports: [
     BrowserModule,
