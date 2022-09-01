@@ -1,6 +1,6 @@
 .footer{
     background-color: #FFFFFF;
-    position: absolute;
+    position: sticky;
     bottom: 0px;
     text-align: right;
     border-color: black;
