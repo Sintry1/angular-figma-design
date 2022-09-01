@@ -1,14 +1,11 @@
-footer{
-    background-color: '#FFFFFF';
+.footer{
+    background-color: #FFFFFF;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     text-align: right;
     border-color: black;
     border-radius: 2px;
-}
-h5{
-    border-top: 2px solid #000000;
-    position: fixed;
-    bottom: 0px;
-    text-align: right;
+    min-width: 100%;
+    padding: 2em;
+    filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.15));
 }
