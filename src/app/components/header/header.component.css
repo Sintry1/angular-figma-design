@@ -6,3 +6,14 @@ h1{
     max-width: 1440px;
     display: inline-flex;
 }
+.nav-bar {
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 75px;
+}
+.page-title-container {
+    font-weight: 900;
+}
