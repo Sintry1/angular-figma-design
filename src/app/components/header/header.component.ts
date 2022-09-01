@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  public date = new Date(); // TODO: Research how to format date to not look like poopy
+  public date = new Date().toLocaleDateString();
 
   constructor() { }
 
