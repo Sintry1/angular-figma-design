@@ -5,4 +5,5 @@ export interface CardType {
     state: TaskStatusEnum;
     isLocked: Boolean;
     text: string;
+    questionContent: string;
 }

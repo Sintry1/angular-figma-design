@@ -1,5 +1,5 @@
 export enum TaskStatusEnum  {
-    ASK = 'ASKED',
+    ASK = 'ASK',
     ANSWER = 'ANSWER',
     ASKED = 'ASKED',
     ANSWERED = 'ANSWERED'

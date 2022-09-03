@@ -1,11 +1,10 @@
 .footer{
     background-color: #FFFFFF;
     position: sticky;
-    bottom: 0px;
     text-align: right;
     border-color: black;
     border-radius: 2px;
-    min-width: 100%;
+    max-width: 100%;
     padding: 2em;
     filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.15));
 }
