@@ -15,35 +15,40 @@ export class TaskCardListComponent implements OnInit {
       state: TaskStatusEnum.ASK,
       isLocked: true,
       text: "1",
-      questionContent: ''
+      questionContent: "",
+      answerContent: ""
     },
     {
       logosrc: "",
       state: TaskStatusEnum.ASK,
       isLocked: false,
       text: "2",
-      questionContent: ''
+      questionContent: "",
+      answerContent: ""
     },
     {
       logosrc: "",
       state: TaskStatusEnum.ANSWER,
       isLocked: false,
       text: "3",
-      questionContent: 'Whatchu want?'
+      questionContent: "Whatchu want?",
+      answerContent: ""
     },
     {
       logosrc: "",
       state: TaskStatusEnum.ASKED,
       isLocked: false,
       text: "4",
-      questionContent: ''
+      questionContent: "",
+      answerContent: ""
     },
     {
       logosrc: "",
       state: TaskStatusEnum.ANSWERED,
       isLocked: false,
       text: "5",
-      questionContent: ''
+      questionContent: "",
+      answerContent: ""
     }
   ];
 

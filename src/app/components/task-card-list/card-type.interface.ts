@@ -6,4 +6,5 @@ export interface CardType {
     isLocked: Boolean;
     text: string;
     questionContent: string;
+    answerContent: string;
 }
