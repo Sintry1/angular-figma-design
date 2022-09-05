@@ -1,7 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { CardType } from '../../app/components/task-card-list/card-type.interface';
+import { Question } from '../../Question';
 import { Observable, ObservedValueOf } from 'rxjs';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+}
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +18,8 @@ export class TaskService {
 
   constructor(private http: HttpClient) { }
 
-  getQuestions(): Observable<CardType> {
-    return this.http.get<CardType>(this.apiURL);
+  getQuestions(): Observable<Question[]> {
+    return this.http.get<Question[]>(this.apiURL);
   }
 
 }

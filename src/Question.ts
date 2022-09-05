@@ -1,6 +1,6 @@
-import { TaskStatusEnum } from "./task-status.enum";
+import { TaskStatusEnum } from "./app/components/task-card-list/task-status.enum";
 
-export interface CardType {
+export interface Question {
     logosrc: string;
     state: TaskStatusEnum;
     isLocked: Boolean;

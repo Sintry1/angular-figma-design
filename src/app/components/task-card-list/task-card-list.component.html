@@ -1,8 +1,8 @@
 <section class="cards-container">  
-    <div *ngFor="let card of cardList">
-        <mat-card [ngClass]="card.isLocked ? 'LOCKED' : getState(card.state)">
-            <mat-card-title>{{card.text}}</mat-card-title>
-            <mat-card-content>{{card.questionContent}}</mat-card-content>
+    <div *ngFor="let question of questions" >
+        <mat-card [ngClass]="question.isLocked ? 'LOCKED' : getState(question.state)" (click)="clickCard(question)">
+            <mat-card-title>{{question.state}}</mat-card-title>
+            <mat-card-content>{{question.questionContent}}</mat-card-content>
         </mat-card>  
     </div>
 </section>

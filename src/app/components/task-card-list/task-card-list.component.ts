@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { CardType } from './card-type.interface';
+import { Component, Input, OnInit } from '@angular/core';
+import { Question } from '../../../Question';
 import { TaskStatusEnum } from './task-status.enum';
+import { TaskService } from 'src/app/services/task.service';
 
 @Component({
   selector: 'app-task-card-list',
@@ -9,10 +10,20 @@ import { TaskStatusEnum } from './task-status.enum';
 })
 export class TaskCardListComponent implements OnInit {
 
-  cardList: CardType[] = [
+  @Input() question: Question;
+
+  questions: Question[] = [];
+
+  constructor(private taskService: TaskService) { }
+
+  ngOnInit(): void {
+    this.taskService.getQuestions().subscribe((questions) => this.questions = questions);
+  }
+
+  cardList: Question[] = [
     {
       logosrc: './assets/Ask.png',
-      state: TaskStatusEnum.ASK,
+      state: TaskStatusEnum.LOCKED,
       isLocked: true,
       text: "1",
       questionContent: "",
@@ -31,7 +42,7 @@ export class TaskCardListComponent implements OnInit {
       state: TaskStatusEnum.ANSWER,
       isLocked: false,
       text: "3",
-      questionContent: "Whatchu want?",
+      questionContent: "",
       answerContent: ""
     },
     {
@@ -52,17 +63,16 @@ export class TaskCardListComponent implements OnInit {
     }
   ];
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
   getState(state: TaskStatusEnum): string {
     return state.toString();
   }
 
   getQuestions(){ //TODO implement the API call to the JSON Server
-    
+    this.taskService.getQuestions()
+  }
+
+  clickCard(question: Question) {
+    console.log("Skrrt Skrrt")
   }
 
 }

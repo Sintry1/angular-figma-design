@@ -10,6 +10,7 @@
     margin-left: 74px;
     height: 350px;
     min-width: 350px;
+    max-width: 350px;
     background-color: #3D4641;
     color: #F2EEE1;
     border-radius: 6px;
@@ -20,6 +21,7 @@
     margin-left: 74px;
     height: 350px; 
     min-width: 350px;
+    max-width: 350px;
     background-color: white;
     color: #4A4A4A;
     border-radius: 6px;
@@ -31,6 +33,7 @@
     margin-left: 74px;
     height: 350px;
     min-width: 350px;
+    max-width: 350px;
     background-color: #F6F6F3;
     color: #4A4A4A;
     border-radius: 6px;
