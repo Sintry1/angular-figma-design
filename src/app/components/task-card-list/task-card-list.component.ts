@@ -22,7 +22,7 @@ export class TaskCardListComponent implements OnInit {
 
   cardList: Question[] = [
     {
-      logosrc: "Locked.png",
+      logosrc: "assets/Locked.png",
       state: TaskStatusEnum.LOCKED,
       isLocked: true,
       text: "1",
@@ -30,7 +30,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "src/assets/Ask/png",
+      logosrc: "assets/Ask/png",
       state: TaskStatusEnum.ASK,
       isLocked: false,
       text: "2",
@@ -38,7 +38,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "src/assets/Answer.png",
+      logosrc: "assets/Answer.png",
       state: TaskStatusEnum.ANSWER,
       isLocked: false,
       text: "3",
@@ -46,7 +46,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "src/assets/Asked.png",
+      logosrc: "assets/Asked.png",
       state: TaskStatusEnum.ASKED,
       isLocked: false,
       text: "4",
@@ -54,7 +54,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "src/assets/Answered.png",
+      logosrc: "assets/Answered.png",
       state: TaskStatusEnum.ANSWERED,
       isLocked: false,
       text: "5",
@@ -74,5 +74,20 @@ export class TaskCardListComponent implements OnInit {
   clickCard(question: Question) {
     console.log("Skrrt Skrrt")
   }
+
+  getLogo(question: Question) {
+
+      if (question.state === TaskStatusEnum.LOCKED) {
+        question.logosrc = '../../Assets/Locked.png'
+      } else if (question.state === TaskStatusEnum.ASK) {
+        question.logosrc = '../../Assets/Ask.png'
+      } else if (question.state === TaskStatusEnum.ANSWER) {
+        question.logosrc = '../../Assets/Answer.png'
+      } else if (question.state === TaskStatusEnum.ASKED) {
+        question.logosrc = '../../Assets/Asked.png'
+      } else if (question.state === TaskStatusEnum.ANSWERED) {
+        question.logosrc = '../../Assets/Answered.png'
+      }
+    }
 
 }

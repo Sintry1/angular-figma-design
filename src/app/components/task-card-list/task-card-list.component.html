@@ -2,9 +2,8 @@
     <div *ngFor="let question of questions" >
         <mat-card [ngClass]="question.isLocked ? 'LOCKED' : getState(question.state)" (click)="clickCard(question)">
             <mat-card-header>
-                <img mat-card-avatar src="./assets/{{question.logosrc}}">
+                <img mat-card-avatar src={{question.logosrc}}/>
             </mat-card-header>
-            <mat-card-title>{{question.logosrc}}</mat-card-title>
             <mat-card-content>{{question.questionContent}}</mat-card-content>
         </mat-card>  
     </div>
