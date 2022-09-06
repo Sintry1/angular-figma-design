@@ -78,18 +78,25 @@ export class TaskCardListComponent implements OnInit {
     console.log("Skrrt Skrrt")
   }
 
-  getLogo(question: Question) {
-
-      if (question.state === TaskStatusEnum.LOCKED) {
-        question.logosrc = '/assets/Locked.png'
-      } else if (question.state === TaskStatusEnum.ASK) {
-        question.logosrc = '/assets/Ask.png'
-      } else if (question.state === TaskStatusEnum.ANSWER) {
-        question.logosrc = '/assets/Answer.png'
-      } else if (question.state === TaskStatusEnum.ASKED) {
-        question.logosrc = '/assets/Asked.png'
-      } else if (question.state === TaskStatusEnum.ANSWERED) {
-        question.logosrc = '/assets/Answered.png'
+  getLogo(state: TaskStatusEnum) {
+      switch(state){
+      case TaskStatusEnum.LOCKED: 
+        return "assets/Locked.png";
+        break;
+      case TaskStatusEnum.ASK:
+        return "/assets/Ask.png";
+        break;
+      case TaskStatusEnum.ANSWER:
+        return "/assets/Answer.png";
+        break;
+      case TaskStatusEnum.ASKED:
+        return "/assets/Asked.png";
+        break;
+      case TaskStatusEnum.ANSWERED:
+        return "/assets/Answered.png";
+        break;
+      default:
+        return "Ya fucked up";
       }
     }
 
