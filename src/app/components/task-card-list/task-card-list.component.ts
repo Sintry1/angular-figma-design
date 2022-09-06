@@ -10,7 +10,7 @@ import { TaskService } from 'src/app/services/task.service';
 })
 export class TaskCardListComponent implements OnInit {
 
-  @Input() question: Question;
+  //@Input() question: Question;
 
   questions: Question[] = [];
 
@@ -18,6 +18,9 @@ export class TaskCardListComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskService.getQuestions().subscribe((questions) => this.questions = questions);
+    setTimeout(() => {
+      console.log(this.questions);
+    }, 1000)
   }
 
   cardList: Question[] = [
@@ -30,7 +33,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "/assets/Ask/png",
+      logosrc: "/assets/Ask.png",
       state: TaskStatusEnum.ASK,
       isLocked: false,
       text: "2",
@@ -78,15 +81,15 @@ export class TaskCardListComponent implements OnInit {
   getLogo(question: Question) {
 
       if (question.state === TaskStatusEnum.LOCKED) {
-        question.logosrc = '../../Assets/Locked.png'
+        question.logosrc = '/assets/Locked.png'
       } else if (question.state === TaskStatusEnum.ASK) {
-        question.logosrc = '../../Assets/Ask.png'
+        question.logosrc = '/assets/Ask.png'
       } else if (question.state === TaskStatusEnum.ANSWER) {
-        question.logosrc = '../../Assets/Answer.png'
+        question.logosrc = '/assets/Answer.png'
       } else if (question.state === TaskStatusEnum.ASKED) {
-        question.logosrc = '../../Assets/Asked.png'
+        question.logosrc = '/assets/Asked.png'
       } else if (question.state === TaskStatusEnum.ANSWERED) {
-        question.logosrc = '../../Assets/Answered.png'
+        question.logosrc = '/assets/Answered.png'
       }
     }
 
