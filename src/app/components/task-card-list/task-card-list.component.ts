@@ -22,7 +22,7 @@ export class TaskCardListComponent implements OnInit {
 
   cardList: Question[] = [
     {
-      logosrc: "assets/Locked.png",
+      logosrc: "/assets/Locked.png",
       state: TaskStatusEnum.LOCKED,
       isLocked: true,
       text: "1",
@@ -30,7 +30,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "assets/Ask/png",
+      logosrc: "/assets/Ask/png",
       state: TaskStatusEnum.ASK,
       isLocked: false,
       text: "2",
@@ -38,7 +38,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "assets/Answer.png",
+      logosrc: "/assets/Answer.png",
       state: TaskStatusEnum.ANSWER,
       isLocked: false,
       text: "3",
@@ -46,7 +46,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "assets/Asked.png",
+      logosrc: "/assets/Asked.png",
       state: TaskStatusEnum.ASKED,
       isLocked: false,
       text: "4",
@@ -54,7 +54,7 @@ export class TaskCardListComponent implements OnInit {
       answerContent: ""
     },
     {
-      logosrc: "assets/Answered.png",
+      logosrc: "/assets/Answered.png",
       state: TaskStatusEnum.ANSWERED,
       isLocked: false,
       text: "5",
